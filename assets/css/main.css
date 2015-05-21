@@ -1,0 +1,159 @@
+html {
+  height: 100%;
+}
+body {
+  background: #dfdfdf;
+  font-size: 16px;
+  line-height: 1.5em;
+  font-family: Merriweather, sans-serif;
+  color: #333333;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+#wrapper {
+  padding: 0;
+  margin: 0;
+  min-height: 100%;
+  background: #dfdfdf;
+}
+@media (min-width: 768px) {
+  #wrapper {
+    background: #dfdfdf url(/assets/img/background.jpg) no-repeat center center;
+    background-size: cover;
+  }
+}
+#main {
+  margin: 20px 0;
+}
+@media (min-width: 768px) {
+  #main {
+    max-width: 450px;
+    margin: 40px 0;
+  }
+}
+@media (min-width: 992px) {
+  #main {
+    max-width: 500px;
+  }
+}
+#main .form-control::-moz-placeholder {
+  font-style: italic;
+}
+#main .form-control:-ms-input-placeholder {
+  font-style: italic;
+}
+#main .form-control::-webkit-input-placeholder {
+  font-style: italic;
+}
+.btn-default {
+  border-radius: 6px;
+  color: #fff;
+  background-color: #ccc;
+  border-color: #ccc;
+  font-family: Montserrat, sans-serif;
+  text-transform: uppercase;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 120px;
+  text-align: center;
+}
+.btn-default:hover {
+  color: #fff;
+  background-color: #b3b3b3;
+  border-color: #b3b3b3;
+}
+.btn-default[disabled] {
+  color: #CCC;
+}
+header {
+  font-size: 27px;
+  color: #668c3b;
+  font-weight: normal;
+  padding-bottom: 13px;
+  border-bottom: 1px solid #999999;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+header img {
+  vertical-align: baseline;
+  margin-right: 15px;
+  width: 250px;
+  max-width: 100%;
+  height: auto;
+}
+footer {
+  margin-top: 20px;
+}
+footer p {
+  font-weight: bold;
+}
+footer h2 {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  font-size: 14px;
+  font-weight: normal;
+  color: #999999;
+  text-align: center;
+  margin-top: 30px;
+}
+footer h2 span {
+  display: inline-block;
+  border-top: 1px solid #999999;
+  margin: 0 10px;
+  vertical-align: middle;
+  width: 80px;
+}
+footer div {
+  text-align: center;
+}
+footer div ul {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  overflow: hidden;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+footer div ul li {
+  list-style: none;
+  font-family: Montserrat, sans-serif;
+  letter-spacing: 1.65px;
+  font-weight: normal;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0 20px 0 -20px;
+  padding: 0;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+footer div ul li:before {
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: Montserrat, sans-serif;
+  color: #fff;
+  content: '•';
+  width: 20px;
+}

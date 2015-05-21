@@ -1,0 +1,179 @@
+
+@import "build/mixins.less";
+@import "build/bootstrap/variables.less";
+@import "presets/defaults.less";
+html {
+    
+  height: 100%;
+}
+
+body {
+    background: @background_color;
+    font-size: 16px;
+    line-height: 1.5em;
+    font-family: Merriweather, sans-serif;
+    color: @text_color;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+  padding:0;
+  margin:0;
+  height: 100%;
+}
+#wrapper {
+    
+  padding:0;
+  margin:0;
+    min-height: 100%;
+  background: #dfdfdf;
+  
+    @media (min-width: @screen-sm-min) {
+        background: #dfdfdf url(/assets/img/background.jpg) no-repeat center center;
+  background-size: cover;
+    }
+}
+#main {
+    margin: 20px 0;
+    
+    @media (min-width: @screen-sm-min) {
+     
+    max-width: 450px;
+    margin: 40px 0;
+    }
+    @media (min-width: @screen-md-min) {
+     
+    max-width: 500px;
+    }
+        
+    
+    .form-control::-moz-placeholder {
+  font-style: italic;
+}
+.form-control:-ms-input-placeholder {
+  font-style: italic;
+}
+.form-control::-webkit-input-placeholder {
+  font-style: italic;
+}
+
+    
+}
+
+.btn-default {
+    border-radius: 6px;
+    color: #fff;
+  background-color: #ccc;
+  border-color: #ccc;
+  font-family: Montserrat, sans-serif;
+  text-transform: uppercase;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 120px;
+  text-align: center;
+  
+  &:hover {
+      color: #fff;
+        background-color: darken(#ccc, 10%);
+        border-color: darken(#ccc, 10%);
+  }
+  &[disabled] {
+      color: #CCC;
+  }
+}
+header {
+    font-size: 27px;
+    color: @header_color;
+    font-weight: normal;
+    padding-bottom: 13px;
+    border-bottom: 1px solid @placeholder_color;
+    font-style: italic;
+    margin-bottom: 20px;
+
+    img {
+        vertical-align: baseline;
+        margin-right: 15px;
+        width: 250px;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+footer {
+    margin-top: 20px;
+    p {
+        font-weight: bold;
+    }
+    
+    h2 {
+        .inline-block();
+        font-size: 14px;
+        font-weight: normal;
+        color: @placeholder_color;
+        text-align: center;
+        margin-top: 30px;
+
+        span {
+            display: inline-block;
+            border-top: 1px solid @placeholder_color;
+            margin: 0 10px;
+            vertical-align: middle;
+            width: 80px;
+        }
+    }
+    div {
+        
+        text-align: center;
+    ul {
+        margin: 0;
+        padding: 0;
+        text-align: left;
+        overflow: hidden;
+        .inline-block();
+
+        li {
+            list-style: none;
+            font-family: Montserrat, sans-serif;
+            letter-spacing: 1.65px;
+            font-weight: normal;
+            color: #fff;
+            text-transform: uppercase;
+            margin: 0 20px 0 -20px;
+            padding: 0;
+            .inline-block();
+            
+            &:before {
+                
+            font-style: normal;
+            font-weight: normal;
+            speak: none;
+
+            display: inline-block;
+            text-decoration: inherit;
+            width: 1em;
+            margin-right: .2em;
+            text-align: center;
+            /* opacity: .8; */
+
+            /* For safety - reset parent styles, that can break glyph codes*/
+            font-variant: normal;
+            text-transform: none;
+
+            /* fix buttons height, for twitter bootstrap */
+            line-height: 1em;
+
+
+            /* you can be more comfortable with increased icons size */
+            /* font-size: 120%; */
+
+            /* Font smoothing. That was taken from TWBS */
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+ 
+            font-family: Montserrat, sans-serif;
+            color: #fff;
+            content: '•';
+            width: 20px;
+            }
+        }
+    }
+    }
+}

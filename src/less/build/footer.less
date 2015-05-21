@@ -1,0 +1,67 @@
+#footer {
+    background: #fff;
+    padding: 15px 0;
+    border-top: 1px solid #c7c7c7;
+    border-bottom: 3px solid @brand-primary;
+    
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .bio-logo {
+        float: right;
+        padding-top: 5px;
+    }
+    
+    .partner {
+        .inline-block();
+        vertical-align: middle;
+        font-size: 12px;
+        text-align: center;
+        margin-right: 20px;
+    }
+    .terms {
+        font-size: 13px;
+        margin-top: 15px;
+        
+        
+        a {
+            color: @text-color;
+            text-decoration: underline;
+        }
+    }
+    
+    @media (max-width: 479px) {
+        
+        text-align: center;
+        
+        .bio-logo {
+            float: none;
+            margin-bottom: 15px;
+            
+        }
+        .partner {
+            margin-right: 0;
+            width: 50%;
+            padding: 0 5px;
+        }
+        
+    }
+    
+    @media (min-width: @screen-sm) {
+    .terms {
+        margin-top: 0;
+        margin-left: 30px;
+        .inline-block();
+        vertical-align: middle;
+    }
+    }
+}
+
+
+    @media (max-width: 479px) {
+    }
+
+    @media (min-width: @screen-sm) {
+    }
