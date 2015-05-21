@@ -146,6 +146,5 @@ if (isset($_POST['lumberjuice_email']) && strlen($_POST['lumberjuice_email']) > 
                     r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
                     ga('create','UA-XXXXX-X','auto');ga('send','pageview');
                 </script>-->
-        <script src="//localhost:35729/livereload.js"></script>
     </body>
 </html>
